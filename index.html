@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ahmed Hadramaut EasyOrder System | TEAM VOID</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
+<div class="deck-shell">
+<header class="topbar">
+<div class="brand"><span class="brand-mark">EV</span><div><b>EasyOrder</b><small>Requirements Engineering Deck</small></div></div>
+<div class="top-meta"><span>TEAM VOID</span><span>BIK10803</span></div>
+</header>
+<main aria-live="polite" class="deck" id="deck">
+<section class="slide" data-notes="Introduce the project, course, team name, lecturer, and the main idea: QR based restaurant ordering." data-slide="1">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">BIK10803 Requirements Engineering</p>
+<h1>Ahmed Hadramaut EasyOrder System</h1>
+<h2>A QR-Based Restaurant Ordering System</h2>
+<div class="slide-body"><div class="hero-layout">
+<div class="hero-copy">
+<p class="lead">A premium requirements presentation showing how TEAM VOID transformed manual restaurant ordering into a clear digital system.</p>
+<div class="hero-chips"><span>URD</span><span>SRS</span><span>Use Cases</span><span>Activity Diagrams</span><span>Sequence Diagrams</span></div>
+</div>
+<div class="system-orb"><div class="qr-box">QR</div><div class="pulse-ring"></div><span>Customer → EasyOrder → Kitchen → Admin</span></div>
+</div></div>
+</div>
+<div class="slide-no">01<span>/ 25</span></div>
+</section><section class="slide" data-notes="Introduce each member, student ID, and contribution. This is the second slide as required." data-slide="2">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">TEAM VOID</p>
+<h1>Group Members</h1>
+<h2>Roles &amp; Responsibilities</h2>
+<div class="slide-body"><div class="members-grid"><article class="member-card"><div class="member-photo-wrap"><img alt="AHMED NASHWAN AHMED AL-MASWARY" class="member-photo" src="assets/member-ahmed.jpg"/></div><div class="member-info"><h3>AHMED NASHWAN AHMED AL-MASWARY</h3><p class="member-id">AI250001</p><p class="role">UML Modelling</p></div></article><article class="member-card"><div class="member-photo-wrap"><img alt="ANAS AWSAN ABDULRAZZAQ MUSAED SALLAM" class="member-photo" src="assets/member-anas.jpg"/></div><div class="member-info"><h3>ANAS AWSAN ABDULRAZZAQ MUSAED SALLAM</h3><p class="member-id">AI250036</p><p class="role">Requirements Elicitation &amp; Documentation</p></div></article><article class="member-card"><div class="member-photo-wrap"><img alt="ABDULMAJEED ABDULLAH AHMED BA HADI" class="member-photo" src="assets/member-abdulmajeed.jpg"/></div><div class="member-info"><h3>ABDULMAJEED ABDULLAH AHMED BA HADI</h3><p class="member-id">AI250042</p><p class="role">SRS Documentation</p></div></article><article class="member-card"><div class="member-photo-wrap"><img alt="MD JOWEL" class="member-photo" src="assets/member-jowel.jpg"/></div><div class="member-info"><h3>MD JOWEL</h3><p class="member-id">AI250004</p><p class="role">Project Leader</p></div></article><article class="member-card"><div class="member-photo-wrap"><img alt="ABDEREHMAN IDRIS JEMAL" class="member-photo" src="assets/member-abderehman.jpg"/></div><div class="member-info"><h3>ABDEREHMAN IDRIS JEMAL</h3><p class="member-id">AI250032</p><p class="role">Prototype Developer</p></div></article></div></div>
+</div>
+<div class="slide-no">02<span>/ 25</span></div>
+</section><section class="slide" data-notes="Explain the whole system in simple words before entering requirements details." data-slide="3">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">01 / System Idea</p>
+<h1>Project Overview</h1>
+<h2>What is EasyOrder?</h2>
+<div class="slide-body"><div class="split"><div><ul class="lux-list"><li>Web-based QR ordering app for Ahmed Hadramaut Restaurant.</li><li>Customers scan a table QR code and open the digital menu.</li><li>Orders are saved with table number and timestamp.</li><li>Kitchen receives orders instantly on the KDS.</li><li>Admin tracks orders and generates reports digitally.</li></ul></div><div><div class="card-grid"><article class="metric-card"><h3>Main Flow</h3><p>Scan QR → View menu → Place order → Kitchen receives → Admin monitors.</p></article><article class="metric-card"><h3>Main Users</h3><p>Customer, Kitchen Staff, Admin / Manager.</p></article><article class="metric-card"><h3>Core Value</h3><p>Faster service, fewer mistakes, and better digital records.</p></article><article class="metric-card"><h3>Project Type</h3><p>Requirements Engineering documentation with UML support.</p></article></div></div></div></div>
+</div>
+<div class="slide-no">03<span>/ 25</span></div>
+</section><section class="slide" data-notes="Compare the old manual system with the problems it creates for customer, staff, kitchen, and manager." data-slide="4">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">02 / As-Is Process</p>
+<h1>Problem Background</h1>
+<h2>Current Manual Ordering Issues</h2>
+<div class="slide-body"><div class="split"><div><ul class="lux-list"><li>Customers request a physical menu.</li><li>Waiter writes the order on paper slips.</li><li>Paper slip is delivered to the kitchen manually.</li><li>Kitchen prepares based on handwritten slip.</li><li>Manager counts sales manually at the end of the day.</li></ul></div><div><div class="card-grid"><article class="problem-card"><h3>Slow Service</h3><p>Manual writing and walking to the kitchen causes delay.</p></article><article class="problem-card"><h3>Miscommunication</h3><p>Handwriting or verbal mistakes can create wrong orders.</p></article><article class="problem-card"><h3>Lost Records</h3><p>Paper slips can be missing, damaged, or unclear.</p></article><article class="problem-card"><h3>No Analytics</h3><p>Management has no instant digital sales overview.</p></article></div></div></div></div>
+</div>
+<div class="slide-no">04<span>/ 25</span></div>
+</section><section class="slide" data-notes="This slide explains how the To-Be system fixes the As-Is problems." data-slide="5">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">03 / Digital Solution</p>
+<h1>Proposed To-Be System</h1>
+<h2>QR Ordering + KDS + Admin Control</h2>
+<div class="slide-body"><div class="flow-line"><div class="flow-node"><span>01</span><b>Customer scans QR</b></div><div class="flow-node"><span>02</span><b>Digital menu opens</b></div><div class="flow-node"><span>03</span><b>Order submitted</b></div><div class="flow-node"><span>04</span><b>KDS receives alert</b></div><div class="flow-node"><span>05</span><b>Status updated</b></div><div class="flow-node"><span>06</span><b>Reports generated</b></div></div><div class="card-grid"><article class="info-card"><h3>QR Ordering</h3><p>Each table has a unique QR code mapped to its table number.</p></article><article class="info-card"><h3>Real-Time KDS</h3><p>Kitchen staff receive order details instantly.</p></article><article class="info-card"><h3>Admin Dashboard</h3><p>Manager tracks orders, updates menu, and generates reports.</p></article><article class="info-card"><h3>Database Records</h3><p>Orders are timestamped and stored for tracking and analysis.</p></article></div></div>
+</div>
+<div class="slide-no">05<span>/ 25</span></div>
+</section><section class="slide" data-notes="Mention that requirements are not only features; they come from data, people, technology, and development constraints." data-slide="6">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">04 / Context Analysis</p>
+<h1>Requirements Engineering Context</h1>
+<h2>Subject, Usage, IT System, and Development Context</h2>
+<div class="slide-body"><div class="context-map"><article><h3>Subject Facet</h3><p>Customer order, menu items, table numbers, order status, sales data.</p></article><article><h3>Usage Facet</h3><p>Customers, restaurant staff, kitchen staff, admin/manager, future payment system.</p></article><article><h3>IT System Facet</h3><p>Mobile devices, QR code system, web app, Kitchen Display System, Internet/Wi‑Fi.</p></article><article><h3>Development Context</h3><p>Limited budget, semester time constraint, team skills, web technologies, iterative process.</p></article></div></div>
+</div>
+<div class="slide-no">06<span>/ 25</span></div>
+</section><section class="slide" data-notes="Explain that requirements engineering starts by identifying the right sources of information." data-slide="7">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">05 / Elicitation Inputs</p>
+<h1>Requirement Sources</h1>
+<h2>Where the requirements came from</h2>
+<div class="slide-body"><div class="card-grid"><article class="source-card"><h3>Stakeholders</h3><p>Customers, restaurant staff, kitchen staff, restaurant manager, and developers.</p></article><article class="source-card"><h3>Existing Documents</h3><p>Project proposal, restaurant menu, manual order records, RE course materials, design references.</p></article><article class="source-card"><h3>Existing Systems</h3><p>Manual ordering system, POS concept, online food apps, QR ordering systems, restaurant management systems.</p></article><article class="source-card"><h3>Observation Notes</h3><p>Problems observed: slow ordering, paper errors, kitchen communication gaps, no digital records.</p></article></div></div>
+</div>
+<div class="slide-no">07<span>/ 25</span></div>
+</section><section class="slide" data-notes="Use this slide to explain actors and the boundary of Ahmed Hadramaut EasyOrder System." data-slide="8">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">06 / System Boundary</p>
+<h1>Main Use Case Diagram</h1>
+<h2>Actors and main system functions</h2>
+<div class="slide-body"><div class="usecase-diagram-showcase">
+<figure class="diagram-frame main-usecase-frame">
+<img alt="Main Use Case Diagram" onerror="this.parentElement.classList.add('missing');this.remove();" src="assets/use-case-main.jpg"/>
+<figcaption>Main Use Case Diagram<span>Full view — Customer, Kitchen Staff, Admin / Manager, and EasyOrder boundary</span></figcaption>
+</figure>
+<div class="usecase-legend-row">
+<span>Customer: Scan QR • View Menu • Place Order</span>
+<span>Kitchen Staff: Receive Order</span>
+<span>Admin / Manager: Update Menu • Track Orders • Generate Reports</span>
+</div>
+</div></div>
+</div>
+<div class="slide-no">08<span>/ 25</span></div>
+</section><section class="slide" data-notes="Explain that the goal model connects project objectives to smaller measurable goals." data-slide="9">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png">
+<div class="slide-inner">
+<p class="kicker">07 / Goals &amp; Sub-Goals</p>
+<h1>Goal Model</h1>
+<h2>Why the system is needed</h2>
+<div class="slide-body"><div class="split"><div><figure class="diagram-frame wide"><img alt="Goal Model" onerror="this.parentElement.classList.add('missing');this.remove();" src="assets/goal-model.png"/><figcaption>Goal Model<span>Replace image later from /assets if needed</span></figcaption></figure></div><div><div class="card-grid"><article class="goal-card"><h3>Main Goal</h3><p>Improve restaurant ordering efficiency and experience.</p></article><article class="goal-card"><h3>Customer Goal</h3><p>Allow customers to order digitally through QR.</p></article><article class="goal-card"><h3>Kitchen Goal</h3><p>Reduce manual workload and receive orders instantly.</p></article><article class="goal-card"><h3>Manager Goal</h3><p>Track active orders and generate daily reports.</p></article></div></div></div></div>
+</div>
+<div class="slide-no">09<span>/ 25</span></div>
+</img></section><section class="slide" data-notes="All Place Order explanation is now in this one slide: actor, goal, precondition, flow, output, alternative, and exception." data-slide="10">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png">
+<div class="slide-inner">
+<p class="kicker">08 / Customer Use Case</p>
+<h1>Use Case 1: Place Order</h1>
+<h2>Full explanation in one slide</h2>
+<div class="slide-body"><div class="usecase-one-slide">
+<div class="uc-flow"><h3>Normal Flow</h3><div class="flow-line compact-flow"><div class="flow-node"><span>01</span><b>Scan table QR</b></div><div class="flow-node"><span>02</span><b>View digital menu</b></div><div class="flow-node"><span>03</span><b>Select items</b></div><div class="flow-node"><span>04</span><b>Submit order</b></div><div class="flow-node"><span>05</span><b>Save order</b></div><div class="flow-node"><span>06</span><b>Alert KDS</b></div></div></div>
+<div class="uc-summary"><h3>Use Case Explanation</h3><div class="uc-mini-grid"><article class="uc-mini"><h3>Actor</h3><p>Customer starts the ordering process from the table.</p></article><article class="uc-mini"><h3>Precondition</h3><p>A valid QR code must be linked to a specific table number.</p></article><article class="uc-mini"><h3>System Work</h3><p>The system gets table number, displays menu, saves order details, and sends alert.</p></article><article class="uc-mini"><h3>Postcondition</h3><p>Order is saved with timestamp and transmitted to the kitchen.</p></article><article class="uc-mini"><h3>Alternative</h3><p>Customer can adjust quantities or cancel before submitting.</p></article><article class="uc-mini"><h3>Exception</h3><p>If connection fails, system shows error and keeps selected items for retry.</p></article></div></div>
+</div></div>
+</div>
+<div class="slide-no">10<span>/ 25</span></div>
+</img></section><section class="slide" data-notes="Diagram slide only. Use Case explanation is already on the previous slide." data-slide="11">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">09 / Diagram Space</p>
+<h1>Place Order Diagrams</h1>
+<h2>Activity + Sequence diagram placeholders</h2>
+<div class="slide-body"><div class="dual-diagram diagram-only"><figure class="diagram-frame wide"><img alt="Activity Diagram: Place Order" onerror="this.parentElement.classList.add('missing');this.remove();" src="assets/activity-place-order.jpg"/><figcaption>Activity Diagram: Place Order<span>Replace later: assets/activity-place-order.jpg</span></figcaption></figure><figure class="diagram-frame wide"><img alt="Sequence Diagram: Place Order" onerror="this.parentElement.classList.add('missing');this.remove();" src="assets/sequence-place-order.jpg"/><figcaption>Sequence Diagram: Place Order<span>Replace later: assets/sequence-place-order.jpg</span></figcaption></figure></div></div>
+</div>
+<div class="slide-no">11<span>/ 25</span></div>
+</section><section class="slide" data-notes="All Receive Order explanation is now in this one slide: actor, KDS alert, validation, status update, and exceptions." data-slide="12">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png">
+<div class="slide-inner">
+<p class="kicker">10 / Kitchen Use Case</p>
+<h1>Use Case 2: Receive Order</h1>
+<h2>Full explanation in one slide</h2>
+<div class="slide-body"><div class="usecase-one-slide">
+<div class="uc-flow"><h3>Normal Flow</h3><div class="flow-line compact-flow"><div class="flow-node"><span>01</span><b>New order alert</b></div><div class="flow-node"><span>02</span><b>Open order card</b></div><div class="flow-node"><span>03</span><b>Review details</b></div><div class="flow-node"><span>04</span><b>Tap Receive Order</b></div><div class="flow-node"><span>05</span><b>Validate order</b></div><div class="flow-node"><span>06</span><b>Update status</b></div></div></div>
+<div class="uc-summary"><h3>Use Case Explanation</h3><div class="uc-mini-grid"><article class="uc-mini"><h3>Actor</h3><p>Kitchen Staff receives the order through the Kitchen Display System.</p></article><article class="uc-mini"><h3>Precondition</h3><p>A customer order has already been submitted successfully.</p></article><article class="uc-mini"><h3>System Work</h3><p>The system loads order ID, table number, items, quantities, notes, and timestamp.</p></article><article class="uc-mini"><h3>Postcondition</h3><p>Order status becomes Preparing and receive time/staff action are saved.</p></article><article class="uc-mini"><h3>Alternative</h3><p>If staff does not confirm immediately, the order stays pending/new.</p></article><article class="uc-mini"><h3>Exception</h3><p>If details cannot load, system shows sync or missing-details message and asks retry.</p></article></div></div>
+</div></div>
+</div>
+<div class="slide-no">12<span>/ 25</span></div>
+</img></section><section class="slide" data-notes="Diagram slide only. Use Case explanation is already on the previous slide." data-slide="13">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png">
+<div class="slide-inner">
+<p class="kicker">11 / Diagram Space</p>
+<h1>Receive Order Diagrams</h1>
+<h2>Activity + Sequence diagram placeholders</h2>
+<div class="slide-body"><div class="dual-diagram diagram-only"><figure class="diagram-frame wide"><img alt="Activity Diagram: Receive Order" onerror="this.parentElement.classList.add('missing');this.remove();" src="assets/activity-receive-order.jpg"/><figcaption>Activity Diagram: Receive Order<span>Replace later: assets/activity-receive-order.jpg</span></figcaption></figure><figure class="diagram-frame wide"><img alt="Sequence Diagram: Receive Order" onerror="this.parentElement.classList.add('missing');this.remove();" src="assets/sequence-receive-order.jpg"/><figcaption>Sequence Diagram: Receive Order<span>Replace later: assets/sequence-receive-order.jpg</span></figcaption></figure></div></div>
+</div>
+<div class="slide-no">13<span>/ 25</span></div>
+</img></section><section class="slide" data-notes="All Track Orders explanation is now in this one slide, including alt and loop concepts." data-slide="14">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png">
+<div class="slide-inner">
+<p class="kicker">12 / Admin Use Case</p>
+<h1>Use Case 3: Track Orders</h1>
+<h2>Full explanation in one slide</h2>
+<div class="slide-body"><div class="usecase-one-slide">
+<div class="uc-flow"><h3>Normal Flow</h3><div class="flow-line compact-flow"><div class="flow-node"><span>01</span><b>Open Track Orders</b></div><div class="flow-node"><span>02</span><b>Retrieve order list</b></div><div class="flow-node"><span>03</span><b>Select order</b></div><div class="flow-node"><span>04</span><b>Show details</b></div><div class="flow-node"><span>05</span><b>Check latest status</b></div><div class="flow-node"><span>06</span><b>Auto-refresh</b></div></div></div>
+<div class="uc-summary"><h3>Use Case Explanation</h3><div class="uc-mini-grid"><article class="uc-mini"><h3>Actor</h3><p>Admin / Manager monitors order progress from the dashboard.</p></article><article class="uc-mini"><h3>Purpose</h3><p>Track Preparing, Ready, and Completed orders in real time.</p></article><article class="uc-mini"><h3>System Work</h3><p>UI requests orders, controller retrieves data, and database returns current statuses.</p></article><article class="uc-mini"><h3>Output</h3><p>Admin sees updated tracking details and current order status.</p></article><article class="uc-mini"><h3>Alternative</h3><p>If no active orders exist, the system displays a no-orders message.</p></article><article class="uc-mini"><h3>Loop</h3><p>Auto-refresh repeats while the admin keeps tracking orders.</p></article></div></div>
+</div></div>
+</div>
+<div class="slide-no">14<span>/ 25</span></div>
+</img></section><section class="slide" data-notes="Diagram slide only. Use Case explanation is already on the previous slide." data-slide="15">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png">
+<div class="slide-inner">
+<p class="kicker">13 / Diagram Space</p>
+<h1>Track Orders Diagram</h1>
+<h2>Sequence diagram placeholder</h2>
+<div class="slide-body"><div class="dual-diagram diagram-only"><figure class="diagram-frame wide"><img alt="Sequence Diagram: Track Orders" onerror="this.parentElement.classList.add('missing');this.remove();" src="assets/sequence-track-orders.jpg"/><figcaption>Sequence Diagram: Track Orders<span>assets/sequence-track-orders.jpg</span></figcaption></figure><figure class="diagram-frame wide"><img alt="Sequence Diagram: Track Orders 2" onerror="this.parentElement.classList.add('missing');this.remove();" src="assets/sequence-track-orders_2.jpg"/><figcaption>Sequence Diagram: Track Orders 2<span>assets/sequence-track-orders_2.jpg</span></figcaption></figure></div></div>
+</div>
+<div class="slide-no">15<span>/ 25</span></div>
+</img></section><section class="slide" data-notes="All Update Menu explanation is now in this one slide: access control, add/edit/delete flow, validation, and exceptions." data-slide="16">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png">
+<div class="slide-inner">
+<p class="kicker">14 / Admin Use Case</p>
+<h1>Use Case 4: Update Menu</h1>
+<h2>Full explanation in one slide</h2>
+<div class="slide-body"><div class="usecase-one-slide">
+<div class="uc-flow"><h3>Normal Flow</h3><div class="flow-line compact-flow"><div class="flow-node"><span>01</span><b>Select Update Menu</b></div><div class="flow-node"><span>02</span><b>Verify login</b></div><div class="flow-node"><span>03</span><b>Display items</b></div><div class="flow-node"><span>04</span><b>Add / Edit / Delete</b></div><div class="flow-node"><span>05</span><b>Validate input</b></div><div class="flow-node"><span>06</span><b>Save changes</b></div></div></div>
+<div class="uc-summary"><h3>Use Case Explanation</h3><div class="uc-mini-grid"><article class="uc-mini"><h3>Actor</h3><p>Admin / Manager controls menu item data.</p></article><article class="uc-mini"><h3>Precondition</h3><p>Admin must be logged in before changing menu information.</p></article><article class="uc-mini"><h3>System Work</h3><p>System shows current items, accepts the selected action, validates input, and saves changes.</p></article><article class="uc-mini"><h3>Postcondition</h3><p>The menu is updated and confirmation is displayed.</p></article><article class="uc-mini"><h3>Alternative</h3><p>Admin can cancel update and return to dashboard.</p></article><article class="uc-mini"><h3>Exception</h3><p>Access denied if not logged in; validation error if data is incomplete or invalid.</p></article></div></div>
+</div></div>
+</div>
+<div class="slide-no">16<span>/ 25</span></div>
+</img></section><section class="slide" data-notes="Diagram slide only. Use Case explanation is already on the previous slide." data-slide="17">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">15 / Diagram Space</p>
+<h1>Update Menu Diagram</h1>
+<h2>Activity diagram placeholder</h2>
+<div class="slide-body"><div class="single-diagram diagram-only"><figure class="diagram-frame wide"><img alt="Activity Diagram: Update Menu" onerror="this.parentElement.classList.add('missing');this.remove();" src="assets/activity-update-menu.jpg"/><figcaption>Activity Diagram: Update Menu<span>Replace later: assets/activity-update-menu.jpg</span></figcaption></figure></div></div>
+</div>
+<div class="slide-no">17<span>/ 25</span></div>
+</section><section class="slide" data-notes="All Generate Report explanation is now in this one slide: input, validation, database retrieval, processing, and output." data-slide="18">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png">
+<div class="slide-inner">
+<p class="kicker">16 / Admin Use Case</p>
+<h1>Use Case 5: Generate Report</h1>
+<h2>Full explanation in one slide</h2>
+<div class="slide-body"><div class="usecase-one-slide">
+<div class="uc-flow"><h3>Normal Flow</h3><div class="flow-line compact-flow"><div class="flow-node"><span>01</span><b>Select Generate Report</b></div><div class="flow-node"><span>02</span><b>Choose report type</b></div><div class="flow-node"><span>03</span><b>Select date range</b></div><div class="flow-node"><span>04</span><b>Validate date</b></div><div class="flow-node"><span>05</span><b>Retrieve data</b></div><div class="flow-node"><span>06</span><b>Display report</b></div></div></div>
+<div class="uc-summary"><h3>Use Case Explanation</h3><div class="uc-mini-grid"><article class="uc-mini"><h3>Actor</h3><p>Admin / Manager generates sales and order reports.</p></article><article class="uc-mini"><h3>Precondition</h3><p>Digital order and sales data must exist in the database.</p></article><article class="uc-mini"><h3>System Work</h3><p>System validates date range, retrieves order/sales data, processes data, and builds the report.</p></article><article class="uc-mini"><h3>Output</h3><p>Generated report is displayed for management review.</p></article><article class="uc-mini"><h3>Alternative</h3><p>Admin can change report type or date range.</p></article><article class="uc-mini"><h3>Exception</h3><p>Invalid date range displays error and returns user to date selection.</p></article></div></div>
+</div></div>
+</div>
+<div class="slide-no">18<span>/ 25</span></div>
+</img></section><section class="slide" data-notes="Diagram slide only. Use Case explanation is already on the previous slide." data-slide="19">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">17 / Diagram Space</p>
+<h1>Generate Report Diagrams</h1>
+<h2>Activity + Sequence diagram placeholders</h2>
+<div class="slide-body"><div class="dual-diagram diagram-only"><figure class="diagram-frame wide"><img alt="Activity Diagram: Generate Report" onerror="this.parentElement.classList.add('missing');this.remove();" src="assets/activity-generate-report.jpg"/><figcaption>Activity Diagram: Generate Report<span>Replace later: assets/activity-generate-report.jpg</span></figcaption></figure><figure class="diagram-frame wide"><img alt="Sequence Diagram: Generate Report" onerror="this.parentElement.classList.add('missing');this.remove();" src="assets/sequence-generate-report.jpg"/><figcaption>Sequence Diagram: Generate Report<span>Replace later: assets/sequence-generate-report.jpg</span></figcaption></figure></div></div>
+</div>
+<div class="slide-no">19<span>/ 25</span></div>
+</section><section class="slide" data-notes="Use this slide to show requirements in simple language, not too much technical detail." data-slide="20">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png">
+<div class="slide-inner">
+<p class="kicker">18 / What the system shall do</p>
+<h1>Functional / Constraint / Quality Requirements</h1>
+<h2>Main requirement groups</h2>
+<div class="slide-body"><div class="card-grid compact-req"><article class="req-card"><h3>Functional Requirements</h3><p>Show menu, get table number, save order, send order to KDS, update order status, update menu, track orders, and generate reports.</p></article><article class="req-card"><h3>Constraint Requirements</h3><p>No online payment in the initial version, no delivery orders, no inventory monitoring, and customer cannot manually edit table number.</p></article><article class="req-card"><h3>Quality Requirements</h3><p>Real-time KDS transmission, exception handling, reliable status display, and user-friendly retry behavior.</p></article><article class="req-card"><h3>Requirement Priority</h3><p>Basic and performance priorities help the team decide what must be implemented first.</p></article></div></div>
+</div>
+<div class="slide-no">20<span>/ 25</span></div>
+</img></section><section class="slide" data-notes="Traceability means every requirement has a reason and connects to a use case. It helps check completeness." data-slide="21">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png">
+<div class="slide-inner">
+<p class="kicker">19 / Requirement Mapping</p>
+<h1>Requirement Traceability</h1>
+<h2>Connecting requirements to use cases</h2>
+<div class="slide-body"><div class="trace-map"><div><span>FR01</span><b>Place Order</b><p>Digital menu, QR table mapping, save order, submit to KDS.</p></div><div><span>FR02</span><b>Receive Order</b><p>KDS alert, order details, kitchen confirmation, status update.</p></div><div><span>Track / Admin</span><b>Track + Update</b><p>Track current orders, refresh statuses, update menu items.</p></div><div><span>Report</span><b>Generate Report</b><p>Validate filters, retrieve data, process sales/order data, display report.</p></div></div></div>
+</div>
+<div class="slide-no">21<span>/ 25</span></div>
+</img></section><section class="slide" data-notes="Use this as a progress summary before presenting benefits and conclusion." data-slide="22">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">20 / Project Deliverables</p>
+<h1>What We Completed</h1>
+<h2>Artifacts prepared by TEAM VOID</h2>
+<div class="slide-body"><div class="card-grid"><article class="deliver-card"><h3>URD</h3><p>User Requirements Definition with purpose, scope, As-Is, To-Be, and business rules.</p></article><article class="deliver-card"><h3>SRS</h3><p>Detailed Software Requirements Specification with use cases and requirement IDs.</p></article><article class="deliver-card"><h3>Use Case Diagrams</h3><p>Main system actors and use cases for Customer, Kitchen Staff, and Admin/Manager.</p></article><article class="deliver-card"><h3>Activity Diagrams</h3><p>Workflows for place order, receive order, update menu, and generate report.</p></article><article class="deliver-card"><h3>Sequence Diagrams</h3><p>Interaction flows between actors, UI, controller, database, KDS, and customer screen.</p></article><article class="deliver-card"><h3>Goal Model</h3><p>Business goals and sub-goals for efficiency, reliability, and better customer experience.</p></article></div></div>
+</div>
+<div class="slide-no">22<span>/ 25</span></div>
+</section><section class="slide" data-notes="Summarize the project value from customer, kitchen, and admin perspectives." data-slide="23">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">21 / Project Value</p>
+<h1>Benefits of EasyOrder</h1>
+<h2>Why this system matters</h2>
+<div class="slide-body"><div class="benefit-board"><div class="benefit big"><b>Faster Ordering</b><span>Customers submit directly from their phones.</span></div><div class="benefit"><b>Fewer Mistakes</b><span>No handwritten slips.</span></div><div class="benefit"><b>Better Kitchen Communication</b><span>Real-time order alerts.</span></div><div class="benefit"><b>Management Tracking</b><span>Orders and sales are visible digitally.</span></div><div class="benefit"><b>Digital Records</b><span>Timestamped data supports reports.</span></div></div></div>
+</div>
+<div class="slide-no">23<span>/ 25</span></div>
+</section><section class="slide" data-notes="Close the presentation by linking the problem, requirements work, and solution value." data-slide="24">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">22 / Final Summary</p>
+<h1>Conclusion</h1>
+<h2>From manual slips to digital requirements</h2>
+<div class="slide-body"><div class="split"><div><ul class="lux-list"><li>EasyOrder transforms the manual restaurant ordering workflow into a QR-based digital system.</li><li>The system addresses slow service, lost slips, and miscommunication.</li><li>Requirements were analyzed through context, sources, use cases, and UML diagrams.</li><li>Each use case explanation is now placed in one clear slide for easier presenting.</li><li>The final concept supports customers, kitchen staff, and admin/manager needs.</li></ul></div><div><div class="conclusion-card"><span>TEAM VOID</span><b>Clear requirements. Better workflow. Smarter restaurant service.</b></div></div></div></div>
+</div>
+<div class="slide-no">24<span>/ 25</span></div>
+</section><section class="slide" data-notes="Thank the lecturer and audience. Invite questions." data-slide="25">
+<img alt="UTHM logo" class="corner-logo" src="assets/uthm-logo.png"/>
+<div class="slide-inner">
+<p class="kicker">BIK10803 Requirements Engineering</p>
+<h1>Thank You</h1>
+<h2>TEAM VOID</h2>
+<div class="slide-body"><div class="thank-card"><h3>Lecturer</h3><p>Dr.Puan Ruhaya Binti Ab.aziz</p><div class="thanks-line"></div><p class="small">Ahmed Hadramaut EasyOrder System</p></div></div>
+</div>
+<div class="slide-no">25<span>/ 25</span></div>
+</section>
+</main>
+<footer class="controls">
+<button id="homeBtn" title="Home">Home</button>
+<button id="prevBtn" title="Previous slide">Previous</button>
+<div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+<span class="counter" id="counter">01 / 25</span>
+<button id="notesBtn" title="Toggle notes with N">Notes</button>
+<button id="nextBtn" title="Next slide">Next</button>
+</footer>
+</div>
+<aside aria-hidden="true" class="notes-panel" id="notesPanel">
+<div><b>Speaker Notes</b><button id="closeNotes">×</button></div>
+<p id="notesText"></p>
+</aside>
+<script src="script.js"></script>
+</body>
+</html>
